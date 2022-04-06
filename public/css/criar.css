@@ -1,0 +1,146 @@
+* {
+    border: 0;
+    margin: 0;
+  }
+  
+  @font-face {
+    /* font-family: "Digital";
+    src: url("../fonts/Merchant Copy Doublesize.ttf"); */
+    font-family: 'Permanent Marker', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: 'Permanent Marker';
+    font-size: 0.8rem;
+    background-image: url('../css/img/criar.png');
+    background-repeat: no-repeat;
+    background-size: 125%;
+  }
+  
+  :root {/*body do criar*/
+    --bg-color-main: #F7F708;
+    --text-color-main: #0e7cb9;
+    --nav-color-main: #C22307;
+    --bg-color-input: #F7F708;
+  }
+  
+  /* .dark_mode {
+    --bg-color-main: #fff;
+    --text-color-main: #000;
+  } */
+  
+  body {
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+    font-size: 20px;
+  }
+  
+  a {/*links do inicio e criar*/
+    text-decoration: none;
+    color: #F7F708;
+  }
+  
+  header {
+    background-color: var(--nav-color-main);
+    font-size: xx-large;
+  }
+  
+  header div {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  header div ul {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    list-style: none;
+  }
+  
+  header div input {
+    background-color: var(--bg-color-input);/*cor da caixa do input*/
+    color: var(--nav-color-main);/*cor do texto do imput de pesquisa*/
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+  }
+  
+  header li:hover {
+    color: #0e7cb9; /*hover do inicio e criar*/
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  main .card-container {
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    width: 150px;
+    height: 200px;
+    border: 1px solid red;
+  }
+  
+  main .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 80%;
+  }
+  
+  main .card-image img {
+    width: 100%;
+  }
+  
+  main table {
+    text-align: center;
+  }
+  
+  main table td,
+  main table thead>tr>th {
+    border: 10px solid rgb(255, 255, 255);
+  }
+  
+  main table tr:nth-child(even) {
+    background-color: #BD332D;
+  }
+  
+  main h1 {
+    color: rgb(255, 255, 255);
+  }
+  
+  main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  main fieldset#main-fieldset {
+    border: 7px dashed #C22307;/*borda do cadastro criar*/
+  }
+  
+  main legend {
+    background-color: #000000;
+  }
+  
+  main div#btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main button {
+    width: 50px;
+  }
+  
+  /*# sourceMappingURL=criar.css.map */

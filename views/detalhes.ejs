@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>  
+    <title>Hqs</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <h1> <%= hqs.nome %> </h1>
+        <img src="<%= hqs.img %> ">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Ficha Técnica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <tr>
+                        <td>Titulo</td>
+                        <td> <%= hqs.nome %>  </td>
+                    </tr>
+                    <tr>
+                        <td> Ano de Produção </td>
+                        <td> <%= hqs.ano %>  </td>
+                    </tr>
+                    <tr>
+                        <td> Produzido por </td>
+                        <td> <%= hqs.artista %>  </td>
+                    </tr>
+                     <tr> 
+                        <td> Genero </td>
+                        <td> <%= hqs.genero %>  </td>
+                    </tr>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
+</body>
+</html>

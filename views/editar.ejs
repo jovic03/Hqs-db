@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/criar.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
+    <title>Criar</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <fieldset id="main-fieldset">
+            <legend> Editando hq <br /> <h1> <%= hqs.nome %> </h1> </legend>
+            <form action="/editar_enviar/<%= hqs.id %> " method="post">
+                <fieldset>
+                    <input type="text" name="nome" value="<%= hqs.nome %>" required>
+                    <label for="nome"> Nome </label>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="url" name="img" value="<%= hqs.img %>" required>
+                    <label for="img"> Url da Imagem </label>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="number" name="ano" value="<%= hqs.ano %>" required>
+                    <label for="ano"> Ano </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <input type="text" name="artista" value="<%= hqs.artista %>" required>
+                    <label for="diretores"> Artista(s) </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="text" name="genero" value="<%= hqs.genero %>" required>
+                    <label for="diretores"> Genero(s) </label>
+                </fieldset>
+
+                <div id="btn-container">
+                    <button type="submit"> Enviar </button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
